@@ -30,6 +30,8 @@ body {
     font-size: 62.5%;
 }
 
+img { border: none; }
+
 article, header nav, footer {
     width: 800px;
     margin: 0 auto;
@@ -52,11 +54,15 @@ header nav {
     background-color: #949599;
 }
 
-header a {
+nav a {
     display: inline-block;
     padding: 8px 5px; 
     color: #fff;
     text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
 }
 
 article {
@@ -223,4 +229,19 @@ section {
 
 #reference figure {
     margin: 0 0 0 -3px;
+}
+
+#logos {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#logos li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+    margin: 0;
+    padding: 0 13px 0 0;
 }
