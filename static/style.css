@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'NudistaMedium';
+    src: url('nudista_-_medium-webfont.eot');
+    src: url('nudista_-_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nudista_-_medium-webfont.woff') format('woff'),
+         url('nudista_-_medium-webfont.ttf') format('truetype'),
+         url('nudista_-_medium-webfont.svg#NudistaMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NudistaSemiBold';
+    src: url('nudista_-_semibold-webfont.eot');
+    src: url('nudista_-_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nudista_-_semibold-webfont.woff') format('woff'),
+         url('nudista_-_semibold-webfont.ttf') format('truetype'),
+         url('nudista_-_semibold-webfont.svg#NudistaSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'NudistaMedium' sans-serif;
+    font-size: 62.5%;
+}
+
+article, header nav, footer {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 1.1em;
+    z-index: 1000;
+}
+
+header nav {
+    width: 780px;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #949599;
+}
+
+header a {
+    display: inline-block;
+    padding: 8px 5px; 
+    color: #fff;
+    text-decoration: none;
+}
+
+article {
+    margin-top: 29px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    display: block;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+p, li {
+    font-size: 1.1em;
+}
+
+section > h1 {
+    margin-top: 0;
+    margin-bottom: 0.67em;
+}
+
+section ul {
+    padding-left: 13px;
+}
+
+section li {
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+section > p {
+    margin-top: 0;
+}
+
+section {
+    margin: 0;
+    padding: 20px;
+    height: 360px;
+    background: #fff none no-repeat 0 0;
+}
+
+#vize {
+    height: auto;
+    overflow: hidden;
+}
+
+#v1, #v2, #v3, #v4 {
+    width: 370px;
+}
+
+#v1, #v2 {
+    float: left;
+    clear: left;
+}
+
+#v3, #v4 {
+    margin-left: 390px;
+}
+
+#parametry {
+    background-image: url('parametry_bg.jpg');
+}
+
+
+#technologie {
+    background-image: url('technologie_bg.jpg');
+    position: relative;
+}
+
+#kluziste {
+    background-image: url('kluziste_bg.jpg');
+}
+
+#lokalita {
+    background-image: url('lokalita_bg.jpg');
+    height: 960px;
+}
+
+#t1, #t2, #t3 {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#t1 { left: 270px; top: 70px; }
+#t2 { left: 270px; top: 280px; }
+#t3 { left: 500px; top: 70px; }
+
+#teaser {
+    height: 360px;
+    padding: 20px 20px 20px 80px;;
+    background: #fff url('plovarna_bg.jpg') no-repeat 0 0;
+}
+
+#teaser h1 {
+    margin: 0;
+    padding: 3px 0 0;
+    font-size: 3em;
+}
+
+#teaser address {
+    margin: 0 0 191px;
+    padding: 0;
+    color: #717578;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+
+#teaser p {
+    font-family: 'NudistaSemiBold', sans-serif;
+    margin: 0 0 11px 390px;
+    color: #fff;
+}
+
+#space-factory {
+    height: 200px;
+    padding: 0 370px 0 0;
+    background: #fff url('mapa.jpg') no-repeat 100% 0;
+}
+
+#space-factory h1 {
+    margin: 0 0 15px;
+    padding: 13px 20px;
+    background-color: #d6d6d6;
+}
+
+#space-factory ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+#space-factory li {
+    margin: 0 0 3px;
+}
+
+#space-factory address {
+    font-style: normal;
+}
+
+#space-factory .adr {
+    margin-top: 13px;
+    padding: 0 20px;
+}
+
+#space-factory .copyright {
+    padding: 0 20px;
+}
+
+#reference {
+    height: auto;
+    color: #fff;
+    background-color: #949599;
+}
+
+#reference figure {
+    margin: 0 0 0 -3px;
+}
