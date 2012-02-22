@@ -7,6 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="jasekpetr@gmail.com" />
 
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="static/style.css" />
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -18,6 +19,10 @@
             _gaq.push(['_trackPageview']);
 
             (function() {
+                if (document.location.hostname === 'localhost') {
+                    return;
+                }
+
                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -25,24 +30,44 @@
         </script>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="#plovarna" title="Plovárna" class="active">Plovárna</a>
-                <a href="#vize" title="Vize">Vize</a>
-                <a href="#parametry" title="Parametry">Parametry</a>
-                <a href="#technologie" title="Technologie">Technologie</a>
-                <a href="#kluziste" title="Kluziště">Kluziště</a>
-                <a href="#lokalita" title="Lokalita">Lokalita</a>
-                <a href="#space-factory" title="Kubná Lipenský Volf Architekti">Kubná Lipenský Volf Architekti</a>
-            </nav>
-        </header>
 
-        <article id="plovarna">
-            <div id="teaser">
+        <article>
+            <header id="plovarna">
                 <h1>PLOVÁRNA NA VLTAVĚ</h1>
-                <address>by Kubná Lipenský Volf Architekti</address>
+                <address>by SPACE FACTORY</address>
+                <p>VIZE PRO PRAHU</p>
+            </header>
+
+            <section id="teaser">
                 <p>Ostrovy na Vltavě jsou jedním ze symbolů veřejného života v&nbsp;Praze. Jsou to oázy klidu uvnitř hustě zastavěné metropole. Řeka plyne svým konstantně rozvážným tempem bez ohledu na chaos na ulici a&nbsp;dává tak na chvíli zapomenout na problémy hektického světa. Kruhová plovárna má potenciál stát se vyhledávaným místem obyvatel města. Má potenciál stát se jedním z pražských ostrovů.</p>
-                <p><strong>PODPOŘTE PLOVÁRNU SVÝM HLASEM!</strong></p>
+            </section>
+
+            <div id="social">
+                <p>POKUD SE VÁM PLOVÁRNA LÍBÍ, PODPOŘTE NÁS SVÝM HLASEM!</p>
+                <div id="profiles">
+                    <span>Navštivte náš profil na</span>
+                    <a href="http://www.facebook.com/Plovarna" title="Facebook Plovárna Praha"><img src="static/profil_facebook.png" width="46" height="46" alt="Facebook" /></a>
+                    <a href="https://plus.google.com/104074462966924298841/posts" title="Google+ Plovárna Praha"><img src="static/profil_plus.png" width="45" height="46" alt="Google+" /></a>
+                    <a href="https://twitter.com/#!/PlovarnaPraha" title="Twitter Plovárna Praha"><img src="static/profil_twitter.png" width="47" height="46" alt="Twitter" /></a>
+                </div>
+                <div id="likes">
+                    <div id="facebook"><div class="fb-like" data-send="true" data-layout="button_count" data-width="180" data-show-faces="false" data-font="arial"></div></div>
+                    <div id="twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                    <div id="plus">
+                        <g:plusone size="medium"></g:plusone>
+                        <script type="text/javascript">
+                          window.___gcfg = {lang: 'cs'};
+                          (function() {
+                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                          })();
+                        </script>
+                    </div>
+                </div>
             </div>
 
             <section id="vize">
@@ -83,16 +108,16 @@
 
             <section id="kluziste">
                 <h1>Kluziště</h1>
-                <p>Plocha kruhového bazénu je<br />v&nbsp;zimě využitelná jako kluziště.<br />Objekt tak bude vytížen<br />téměř během celého roku<br />a&nbsp;postará se o&nbsp;navrácení<br />další dlouho opomíjené tradice.</p>
+                <p>Plocha kruhového bazénu je v&nbsp;zimě využitelná jako kluziště. Objekt tak bude vytížen téměř<br />během celého roku a&nbsp;postará se o&nbsp;navrácení další dlouho opomíjené tradice.</p>
             </section>
 
             <section id="lokalita">
                 <h1>Lokalita</h1>
-                <p>Plovárnu je možné umístit do<br />několika vytipovaných lokalit<br />v&nbsp;různých vzdálenostech od<br />centra.</p>
+                <p>Plovárnu je možné umístit do několika vytipovaných lokalit v&nbsp;různých vzdálenostech od centra.</p>
             </section>
 
             <section id="space-factory" class="vcard">
-                <h1 class="fn org">Kubná Lipenský Volf</h1>
+                <h1 class="fn org">SPACE FACTORY</h1>
                 <ul id="authors">
                     <li class="vcard"><address class="fn">Ing. arch. Andrea Kubná</address></li>
                     <li class="vcard"><address class="fn">Ing. arch. Ondřej Lipenský</address></li>
@@ -101,24 +126,43 @@
 
                 <p class="adr">Creative Gate - Jindřišská pasáž<br /><span class="street-address">Jindřišská 5</span>, <span class="postal-code">110 00</span> <span class="locality">Praha 1</span><br /><span class="tel">+420 723 531 325</span></p>
 
-                <p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a></p>
+                <p><a href="mailto:info@plovarna-praha.cz" title="Napište nám email" class="email">info@plovarna-praha.cz</a></p>
             </section>
 
             <section id="reference">
                 <p>Tento projekt byl publikován v těchto médiích:</p>
                 <ul id="logos">
-                    <li><a href="http://5osa.com/3446" title="5osA"><img src="static/5sa.png" alt="5sa" /></a></li>
-                    <li><a href="http://www10.aeccafe.com/blogs/arch-showcase/2012/01/25/floating-baths-in-vltava-river-prague-by-kubna-lipensky-volf-architects/#more-67893" title="AEC"><img src="static/AECC.png" alt="AEC" /></a></li>
-                    <li><a href="http://www.archdaily.com/188064/floating-baths-ondrej-lipensky-and-andrea-kubna/" title="Arch daily"><img src="static/ArchDaily.png" alt="Arch daily" /></a></li>
-                    <li><a href="http://designbuildsource.com.au/on-water-building-concept-boom" title="Architecture source"><img src="static/ArchiSource.png" alt="Architecture source" /></a></li>
                     <li><a href="http://www.fastcodesign.com/1665787/a-floating-oasis-in-the-middle-of-a-once-polluted-river" title="Codesign"><img src="static/CoDesign.png" alt="Codesign" /></a></li>
-                    <li><a href="http://cutedecision.com/floating-bath-in-the-middle-of-the-vltava-river-in-prague/" title="Cutedecision"><img src="static/CuteDecision.png" alt="Cutedecision" /></a></li>
-                    <li><a href="http://www.designboom.com/weblog/cat/9/view/17865/andrea-kubna-ondrej-lipensky-floating-bath-on-vltava-river.html" title="Design boom"><img src="static/Designboom.png" alt="Design boom" /></a></li>
+                    <li><a href="http://www.archdaily.com/188064/floating-baths-ondrej-lipensky-and-andrea-kubna/" title="Arch daily"><img src="static/ArchDaily.png" alt="Arch daily" /></a></li>
                     <li><a href="http://inhabitat.com/floating-pool-could-clean-the-water-in-pragues-vltava-river/" title="Inhabitat"><img src="static/Inhabitat.png" alt="Inhabitat" /></a></li>
-                    <li><a href="http://www.novate.ru/blogs/291111/19449/" title="novate"><img src="static/Novate.png" alt="Novate" /></a></li>
+                    <li><a href="http://www.designboom.com/weblog/cat/9/view/17865/andrea-kubna-ondrej-lipensky-floating-bath-on-vltava-river.html" title="Design boom"><img src="static/Designboom.png" alt="Design boom" /></a></li>
+                    <li><a href="http://designbuildsource.com.au/on-water-building-concept-boom" title="Architecture source"><img src="static/ArchiSource.png" alt="Architecture source" /></a></li>
                     <li><a href="http://news.zhulong.com/read147476.htm" title="Zhulong"><img src="static/Zhulong.png" alt="Zhulong" /></a></li>
+                    <li><a href="http://www10.aeccafe.com/blogs/arch-showcase/2012/01/25/floating-baths-in-vltava-river-prague-by-kubna-lipensky-volf-architects/#more-67893" title="AEC"><img src="static/AECC.png" alt="AEC" /></a></li>
+                    <li><a href="http://cutedecision.com/floating-bath-in-the-middle-of-the-vltava-river-in-prague/" title="Cutedecision"><img src="static/CuteDecision.png" alt="Cutedecision" /></a></li>
+                    <li><a href="http://www.novate.ru/blogs/291111/19449/" title="novate"><img src="static/Novate.png" alt="Novate" /></a></li>
+                    <li><a href="http://5osa.com/3446" title="5osA"><img src="static/5sa.png" alt="5sa" /></a></li>
                 </ul>
             </section>
         </article>
+
+        <div id="navbar"><nav>
+            <a href="#plovarna" title="Plovárna" class="active">Plovárna</a>
+            <a href="#vize" title="Vize">Vize</a>
+            <a href="#parametry" title="Parametry">Parametry</a>
+            <a href="#technologie" title="Technologie">Technologie</a>
+            <a href="#kluziste" title="Kluziště">Kluziště</a>
+            <a href="#lokalita" title="Lokalita">Lokalita</a>
+            <a href="#space-factory" title="Space Factory">Kontakt</a>
+        </nav></div>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/cs_CZ/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     </body>
 </html>

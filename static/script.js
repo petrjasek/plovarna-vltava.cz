@@ -12,7 +12,7 @@ $(function() {
             return;
         }
 
-        var sections = $('section');
+        var sections = $('section, header');
         for (var i = 0; i < sections.size(); i++) {
             if ($(sections[i]).position().top - 25 > $(window).scrollTop()) {
                 if (i > 0) {

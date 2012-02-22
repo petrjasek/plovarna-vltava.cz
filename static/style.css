@@ -12,8 +12,7 @@
 
 @font-face {
     font-family: 'NudistaSemiBold';
-    src: url('nudista_-_semibold-webfont.eot');
-    src: url('nudista_-_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('nudista_-_semibold-webfont.eot'); src: url('nudista_-_semibold-webfont.eot?#iefix') format('embedded-opentype'),
          url('nudista_-_semibold-webfont.woff') format('woff'),
          url('nudista_-_semibold-webfont.ttf') format('truetype'),
          url('nudista_-_semibold-webfont.svg#NudistaSemiBold') format('svg');
@@ -28,17 +27,18 @@ body {
     text-align: center;
     font-family: 'NudistaMedium' sans-serif;
     font-size: 62.5%;
+    background-color: #e4e4e4;
 }
 
 img { border: none; }
 
-article, header nav, footer {
+article, #navbar > nav, footer {
     width: 800px;
     margin: 0 auto;
     text-align: left;
 }
 
-header {
+#navbar {
     width: 100%;
     position: fixed;
     top: 0;
@@ -47,21 +47,21 @@ header {
     z-index: 1000;
 }
 
-header nav {
+#navbar > nav {
     width: 780px;
     padding: 0 10px;
     color: #fff;
-    background-color: #949599;
+    background-color: #636466;
 }
 
-nav a {
+#navbar > nav a {
     display: inline-block;
     padding: 8px 5px; 
     color: #fff;
     text-decoration: none;
 }
 
-nav a.active {
+#navbar > nav a.active {
     text-decoration: underline;
 }
 
@@ -106,9 +106,9 @@ section > p {
 
 section {
     margin: 0;
-    padding: 20px;
-    height: 360px;
-    background: #fff none no-repeat 0 0;
+    padding: 30px 15px;
+    height: 350px;
+    background: #fff none no-repeat 0 100%;
 }
 
 #vize {
@@ -136,16 +136,21 @@ section {
 
 #technologie {
     background-image: url('technologie_bg.jpg');
+    background-position: 0 0;
     position: relative;
+    height: 434px;
 }
 
 #kluziste {
     background-image: url('kluziste_bg.jpg');
+    padding: 30px 15px;
+    height: 452px;
 }
 
 #lokalita {
     background-image: url('lokalita_bg.jpg');
-    height: 960px;
+    padding: 30px 15px;
+    height: 1040px;
 }
 
 #t1, #t2, #t3 {
@@ -160,47 +165,35 @@ section {
 #t3 { left: 500px; top: 70px; }
 
 #teaser {
-    height: 360px;
-    padding: 20px 20px 20px 80px;;
+    height: 401px;
+    padding: 0 16px;
     background: #fff url('plovarna_bg.jpg') no-repeat 0 0;
 }
 
-#teaser h1 {
+#teaser > p {
     margin: 0;
-    padding: 3px 0 0;
-    font-size: 3em;
-}
-
-#teaser address {
-    margin: 0 0 217px;
-    padding: 0;
-    color: #717578;
-    font-style: normal;
-    font-size: 1.1em;
-}
-
-
-#teaser p {
-    font-family: 'NudistaSemiBold', sans-serif;
-    margin: 0 0 11px 330px;
+    padding: 282px 0 0;
     color: #fff;
+    font-family: 'NudistaSemiBold', sans-serif;
+    font-size: 1.8em;
+    text-shadow: #000 0 0 3px;
 }
 
 #space-factory {
     height: 200px;
     padding: 0 370px 0 0;
-    background: #fff url('mapa.jpg') no-repeat 100% 0;
+    background: #c7c8ca url('mapa.jpg') no-repeat 100% 0;
 }
 
-#space-factory h1 {
-    margin: 0 0 15px;
-    padding: 13px 20px;
-    background-color: #d6d6d6;
+#space-factory > h1 {
+    margin: 0;
+    padding: 20px 15px 18px;
+    font-size: 2em;
 }
 
 #space-factory ul {
     margin: 0;
-    padding: 0 20px;
+    padding: 0 15px;
     list-style-type: none;
 }
 
@@ -212,19 +205,15 @@ section {
     font-style: normal;
 }
 
-#space-factory .adr {
+#space-factory > p {
     margin-top: 13px;
-    padding: 0 20px;
-}
-
-#space-factory .copyright {
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 #reference {
     height: auto;
-    color: #fff;
-    background-color: #949599;
+    color: #010101;
+    background-color: #fff;
 }
 
 #reference figure {
@@ -232,16 +221,91 @@ section {
 }
 
 #logos {
+    height: 1%;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-align: center;
 }
 
-#logos li {
-    display: table-cell;
+#logos > li {
+    float: left;
     vertical-align: middle;
-    height: 80px;
     margin: 0;
-    padding: 0 13px 0 0;
+    padding: 13px 0 0 0;
+}
+
+#plovarna {
+    padding: 20px 14px 20px 84px;
+    background: #fff url('logo.png') no-repeat 14px 50%;
+    position: relative;
+}
+
+#plovarna > h1 {
+    margin: 0;
+    padding: 0;
+    color: #04adf2;
+    font-family: 'NudistaSemiBold' sans-serif;
+    font-size: 2.55em;
+    font-weight: bold;
+}
+
+#plovarna > address {
+    margin: 3px 0 0;
+    padding: 0;
+    color: #04adf2;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+#plovarna > p {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    font-family: 'NudistaSemiBold' sans-serif;
+    font-size: 1.8em;
+}
+
+#social {
+    height: 1%;
+    overflow: hidden;
+    background-color: #edeef0;
+    border-bottom: 1px solid #dedfe1;
+}
+
+#social > p {
+    margin: 0;
+    padding: 15px 15px 0;
+    font-size: 1.8em;
+}
+
+#profiles {
+    float: right;
+    padding: 0 15px 15px;
+    font-size: 1.3em;
+}
+
+#profiles > a {
+    margin-left: 5px;
+}
+
+#profiles > span {
+    position: relative;
+    top: -3px;
+}
+
+#likes {
+    height: 1%;
+    overflow: hidden;
+    padding: 25px 25px 0;
+}
+
+#likes > div {
+    float: left;
+}
+
+#space-factory .email {
+    color: #000;
+    font-weight: bold;
 }
