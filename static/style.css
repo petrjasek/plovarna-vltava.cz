@@ -25,8 +25,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'NudistaMedium' sans-serif;
-    font-size: 62.5%;
+    font-family: 'NudistaMedium', sans-serif;
+    font-size: 13px;
     background-color: #e4e4e4;
 }
 
@@ -79,11 +79,11 @@ figure img {
 }
 
 h1 {
-    font-size: 2.4em;
+    font-size: 21px;
 }
 
 p, li {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 section > h1 {
@@ -131,6 +131,7 @@ section {
 
 #parametry {
     background-image: url('parametry_bg.jpg');
+    height: 833px;
 }
 
 
@@ -150,11 +151,11 @@ section {
 #lokalita {
     background-image: url('lokalita_bg.jpg');
     padding: 30px 15px;
-    height: 1040px;
+    height: 910px;
 }
 
 #t1, #t2, #t3 {
-    width: 150px;
+    width: 160px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -162,7 +163,7 @@ section {
 
 #t1 { left: 270px; top: 70px; }
 #t2 { left: 270px; top: 280px; }
-#t3 { left: 500px; top: 70px; }
+#t3 { left: 490px; top: 70px; }
 
 #teaser {
     height: 401px;
@@ -175,20 +176,28 @@ section {
     padding: 282px 0 0;
     color: #fff;
     font-family: 'NudistaSemiBold', sans-serif;
-    font-size: 1.8em;
+    font-size: 18px;
     text-shadow: #000 0 0 3px;
 }
 
 #space-factory {
     height: 200px;
     padding: 0 370px 0 0;
-    background: #c7c8ca url('mapa.jpg') no-repeat 100% 0;
+    background: #c7c8ca;
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 430px;
+    height: 200px;
 }
 
 #space-factory > h1 {
     margin: 0;
-    padding: 20px 15px 18px;
-    font-size: 2em;
+    padding: 20px 15px 13px;
 }
 
 #space-factory ul {
@@ -206,7 +215,7 @@ section {
 }
 
 #space-factory > p {
-    margin-top: 13px;
+    margin-top: 8px;
     padding: 0 15px;
 }
 
@@ -246,8 +255,7 @@ section {
     margin: 0;
     padding: 0;
     color: #04adf2;
-    font-family: 'NudistaSemiBold' sans-serif;
-    font-size: 2.55em;
+    font-family: 'NudistaSemiBold', sans-serif;
     font-weight: bold;
 }
 
@@ -255,16 +263,15 @@ section {
     margin: 3px 0 0;
     padding: 0;
     color: #04adf2;
-    font-size: 1.5em;
     font-style: normal;
 }
 
 #plovarna > p {
     position: absolute;
-    top: 18px;
+    top: 15px;
     right: 14px;
-    font-family: 'NudistaSemiBold' sans-serif;
-    font-size: 1.8em;
+    font-family: 'NudistaSemiBold', sans-serif;
+    font-size: 18px;
 }
 
 #social {
@@ -277,13 +284,13 @@ section {
 #social > p {
     margin: 0;
     padding: 15px 15px 0;
-    font-size: 1.8em;
+    font-size: 18px;
 }
 
 #profiles {
     float: right;
     padding: 0 15px 15px;
-    font-size: 1.3em;
+    font-size: 13px;
 }
 
 #profiles > a {
@@ -308,4 +315,8 @@ section {
 #space-factory .email {
     color: #000;
     font-weight: bold;
+}
+
+#kontakt-nav {
+    float: right;
 }

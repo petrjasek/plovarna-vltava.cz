@@ -34,7 +34,7 @@
         <article>
             <header id="plovarna">
                 <h1>PLOVÁRNA NA VLTAVĚ</h1>
-                <address>by SPACE FACTORY</address>
+                <address>od SPACE FACTORY</address>
                 <p>VIZE PRO PRAHU</p>
             </header>
 
@@ -119,14 +119,35 @@
             <section id="space-factory" class="vcard">
                 <h1 class="fn org">SPACE FACTORY</h1>
                 <ul id="authors">
-                    <li class="vcard"><address class="fn">Ing. arch. Andrea Kubná</address></li>
-                    <li class="vcard"><address class="fn">Ing. arch. Ondřej Lipenský</address></li>
-                    <li class="vcard"><address class="fn">Ing. arch. Michal Volf</address></li>
+                    <li class="vcard"><address class="fn">Andrea Kubná</address></li>
+                    <li class="vcard"><address class="fn">Ondřej Lipenský</address></li>
+                    <li class="vcard"><address class="fn">Michal Volf</address></li>
                 </ul>
 
                 <p class="adr">Creative Gate - Jindřišská pasáž<br /><span class="street-address">Jindřišská 5</span>, <span class="postal-code">110 00</span> <span class="locality">Praha 1</span><br /><span class="tel">+420 723 531 325</span></p>
 
                 <p><a href="mailto:info@plovarna-praha.cz" title="Napište nám email" class="email">info@plovarna-praha.cz</a></p>
+                
+                <div id="map"></div>
+                <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+                <script type="text/javascript">
+                $(function() {
+                    var myLatlng = new google.maps.LatLng(50.083221,14.426983);
+                    var myOptions = {
+                        zoom: 15,
+                        center: myLatlng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        disableDefaultUI: true
+                    }
+                    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+                        
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        map: map,
+                        title:"Space Factory"
+                    });   
+                });
+                </script>
             </section>
 
             <section id="reference">
@@ -147,13 +168,13 @@
         </article>
 
         <div id="navbar"><nav>
-            <a href="#plovarna" title="Plovárna" class="active">Plovárna</a>
-            <a href="#vize" title="Vize">Vize</a>
-            <a href="#parametry" title="Parametry">Parametry</a>
-            <a href="#technologie" title="Technologie">Technologie</a>
-            <a href="#kluziste" title="Kluziště">Kluziště</a>
-            <a href="#lokalita" title="Lokalita">Lokalita</a>
-            <a href="#space-factory" title="Space Factory">Kontakt</a>
+            <a href="#space-factory" title="Space Factory" id="kontakt-nav">KONTAKT</a>
+            <a href="#plovarna" title="Plovárna" class="active">PLOVÁRNA</a>
+            <a href="#vize" title="Vize">VIZE</a>
+            <a href="#parametry" title="Parametry">PARAMETRY</a>
+            <a href="#technologie" title="Technologie">TECHNOLOGIE</a>
+            <a href="#kluziste" title="Kluziště">KLUZIŠTĚ</a>
+            <a href="#lokalita" title="Lokalita">LOKALITA</a>
         </nav></div>
 
         <div id="fb-root"></div>
