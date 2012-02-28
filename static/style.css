@@ -61,8 +61,8 @@ article, #navbar > nav, footer {
     text-decoration: none;
 }
 
-#navbar > nav a.active {
-    text-decoration: underline;
+#navbar > nav a.active, #navbar > nav a:hover {
+    color: #66ccff;
 }
 
 article {
@@ -106,7 +106,7 @@ section > p {
 
 section {
     margin: 0;
-    padding: 30px 15px;
+    padding: 30px 15px 15px;
     height: 350px;
     background: #fff none no-repeat 0 100%;
 }
@@ -314,9 +314,20 @@ section {
 
 #space-factory .email {
     color: #000;
-    font-weight: bold;
+    font-family: 'NudistaSemiBold', sans-serif;
+    text-decoration: none;
+}
+
+#space-factory .email:hover {
+    color: #fff;
 }
 
 #kontakt-nav {
     float: right;
+}
+
+#vision-text {
+    margin: 0;
+    color: #04adf2;
+    font-size: 34px;
 }
