@@ -1,5 +1,5 @@
 $(function() {
-    $('nav a').click(function(e) {
+    $('nav a').not('#language').click(function(e) {
         e.preventDefault();
         var target = $($(this).attr('href')).first();
         $('html, body').animate({scrollTop: target.position().top - 25}, 3000);

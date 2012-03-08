@@ -327,7 +327,16 @@ section {
 }
 
 #vision-text {
+    clear: both;
     margin: 0;
     color: #04adf2;
     font-size: 34px;
+}
+
+#en #vision-text {
+    font-size: 28px;
+}
+
+#language {
+    float: right;
 }
