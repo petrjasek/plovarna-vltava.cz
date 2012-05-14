@@ -340,3 +340,12 @@ section {
 #language {
     float: right;
 }
+
+.fn.org > a {
+    color: #000;
+    text-decoration: none;
+}
+
+.fn.org > a:hover {
+    text-decoration: underline;
+}
