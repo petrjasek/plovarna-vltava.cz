@@ -312,13 +312,15 @@ section {
     float: left;
 }
 
-#space-factory .email {
+#space-factory .email,
+#space-factory .out {
     color: #000;
     font-family: 'NudistaSemiBold', sans-serif;
     text-decoration: none;
 }
 
-#space-factory .email:hover {
+#space-factory .email:hover,
+#space-factory .out:hover {
     color: #fff;
 }
 
